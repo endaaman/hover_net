@@ -200,7 +200,7 @@ def infer_step(batch_data, model):
 ####
 def viz_step_output(raw_data, nr_types=None):
     """
-    `raw_data` will be implicitly provided in the similar format as the 
+    `raw_data` will be implicitly provided in the similar format as the
     return dict from train/valid step, but may have been accumulated across N running step
     """
 

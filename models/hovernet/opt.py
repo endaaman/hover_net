@@ -31,7 +31,7 @@ def get_config(nr_type, mode):
                     # may need more dynamic for each network
                     "net": {
                         "desc": lambda: create_model(
-                            input_ch=3, nr_types=nr_type, 
+                            input_ch=3, nr_types=nr_type,
                             freeze=True, mode=mode
                         ),
                         "optimizer": [
@@ -52,7 +52,7 @@ def get_config(nr_type, mode):
                         },
                         # path to load, -1 to auto load checkpoint from previous phase,
                         # None to start from scratch
-                        "pretrained": "../pretrained/ImageNet-ResNet50-Preact_pytorch.tar",
+                        "pretrained": ",/weights/ImageNet-ResNet50-Preact_pytorch.tar",
                         # 'pretrained': None,
                     },
                 },
@@ -65,7 +65,7 @@ def get_config(nr_type, mode):
                     # may need more dynamic for each network
                     "net": {
                         "desc": lambda: create_model(
-                            input_ch=3, nr_types=nr_type, 
+                            input_ch=3, nr_types=nr_type,
                             freeze=False, mode=mode
                         ),
                         "optimizer": [

@@ -73,7 +73,7 @@ class TrainManager(Config):
     ####
     def view_dataset(self, mode="train"):
         """
-        Manually change to plt.savefig or plt.show 
+        Manually change to plt.savefig or plt.show
         if using on headless machine or not
         """
         self.nr_gpus = 1
@@ -84,7 +84,7 @@ class TrainManager(Config):
         target_info = phase_list["target_info"]
         prep_func, prep_kwargs = target_info["viz"]
         dataloader = self._get_datagen(2, mode, target_info["gen"])
-        for batch_data in dataloader:  
+        for batch_data in dataloader:
             # convert from Tensor to Numpy
             batch_data = {k: v.numpy() for k, v in batch_data.items()}
             viz = prep_func(batch_data, is_batch=True, **prep_kwargs)

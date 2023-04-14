@@ -29,8 +29,8 @@ class Config(object):
         # whether to predict the nuclear type, availability depending on dataset!
         self.type_classification = True
 
-        # shape information - 
-        # below config is for original mode. 
+        # shape information -
+        # below config is for original mode.
         # If original model mode is used, use [270,270] and [80,80] for act_shape and out_shape respectively
         # If fast model mode is used, use [256,256] and [164,164] for act_shape and out_shape respectively
         aug_shape = [540, 540] # patch shape used during augmentation (larger patch may have less border artefacts)

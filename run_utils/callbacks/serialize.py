@@ -10,10 +10,10 @@ matplotlib.use("Agg")
 ####
 def fig2data(fig, dpi=180):
     """Convert a Matplotlib figure to a 4D numpy array with RGBA channels and return it.
-    
+
     Args:
         fig: a matplotlib figure
-    
+
     Return: a numpy 3D array of RGBA values
 
     """

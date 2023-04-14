@@ -37,8 +37,8 @@ class Net(nn.Module):
 
 ####
 class TFSamepaddingLayer(nn.Module):
-    """To align with tf `same` padding. 
-    
+    """To align with tf `same` padding.
+
     Putting this before any conv layer that need padding
     Assuming kernel has Height == Width for simplicity
     """
@@ -71,8 +71,8 @@ class TFSamepaddingLayer(nn.Module):
 class DenseBlock(Net):
     """Dense Block as defined in:
 
-    Huang, Gao, Zhuang Liu, Laurens Van Der Maaten, and Kilian Q. Weinberger. 
-    "Densely connected convolutional networks." In Proceedings of the IEEE conference 
+    Huang, Gao, Zhuang Liu, Laurens Van Der Maaten, and Kilian Q. Weinberger.
+    "Densely connected convolutional networks." In Proceedings of the IEEE conference
     on computer vision and pattern recognition, pp. 4700-4708. 2017.
 
     Only performs `valid` convolution.
@@ -155,8 +155,8 @@ class DenseBlock(Net):
 class ResidualBlock(Net):
     """Residual block as defined in:
 
-    He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. "Deep residual learning 
-    for image recognition." In Proceedings of the IEEE conference on computer vision 
+    He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. "Deep residual learning
+    for image recognition." In Proceedings of the IEEE conference on computer vision
     and pattern recognition, pp. 770-778. 2016.
 
     """
@@ -269,7 +269,7 @@ class ResidualBlock(Net):
 ####
 class UpSample2x(nn.Module):
     """Upsample input by a factor of 2.
-    
+
     Assume input is of NCHW, port FixedUnpooling from TensorPack.
     """
 
